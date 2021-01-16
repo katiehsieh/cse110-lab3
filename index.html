@@ -64,7 +64,7 @@
     <div>
       <h3>Meet My Bird</h3>
       <figure>
-        <img src="Frosty.JPG" alt="Bird" width=100>
+        <img src="Frosty.JPG" alt="Bird" width=150>
         <figcaption><em>Frosty</em></figcaption>
       </figure>
     </div>
@@ -95,34 +95,30 @@
     <br>
 
     <section>
-      <h3>Candy Platformer Game</h3>
-      <iframe src="https://scratch.mit.edu/projects/68808268/embed" width="485" height="402" allowfullscreen></iframe>
+      <h3>Wintergatan - Marble Machine</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/IvUU8joBb1Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     <br>
 
     <section>
       <h3>Canvas</h3>
-      <canvas width="300" height="300">
+      <canvas width="100" height="100">
         Canvas description
       </canvas>
+
+      <br>
+
+      <svg width="100" height="100">
+        <circle cx="50" cy="50" r="30" stroke="lightblue" stroke-width="5" fill="lightcyan" />
+      </svg>
     </section>
     
-    <br>
-
-    <section>
-      
-    </section>
-
     <br>
     
     <aside>
       <h3>Quote of the Day</h3>
       <code>Start early, start often</code>
-      <br>
-      <svg width="100" height="100">
-        <circle cx="50" cy="50" r="30" stroke="lightblue" stroke-width="5" fill="lightcyan" />
-      </svg>
     </aside>
 
     <br>
@@ -145,13 +141,119 @@
 [Link](url) and ![Image](src)
       </pre>
     </div>
-  
 
-    <picture>
-      <source srcset="beach-h.JPG"
-              media="(min-width: 800px)">
-      <img src="beach-v.JPG" alt="" />
-    </picture>
+    <section>
+      <h3>Survey</h3>
+
+      <form action="" method="get">
+        <div>
+          <label for="name">Name: </label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <br>
+        <div>
+          <label for="email">Email: </label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <br>
+        <div>
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </div>
+        <br>
+        <fieldset>
+          <legend>What year are you?</legend>
+      
+          <input type="radio" id="1st" name="year">
+          <label for="1st">1st year</label><br/>
+      
+          <input type="radio" id="2nd" name="year">
+          <label for="2nd">2nd year</label><br/>
+      
+          <input type="radio" id="3rd" name="year">
+          <label for="3rd">3rd year</label><br/>
+
+          <input type="radio" id="4th" name="year">
+          <label for="4th">4th year</label>
+        </fieldset>
+        <br>
+        <div>
+          <label for="grad">Graduation date:</label>
+          <input type="month" id="grad" name="grad" min="2021-01">
+        </div>
+        <br>
+        <div>
+          <label for="major">Major:</label>
+          <input list="majors" id="major" name="major" />
+          <datalist id="majors">
+              <option value="Computer Science">
+              <option value="Computer Engineering">
+              <option value="Electrical Engineering">
+          </datalist>
+        </div>
+        <br>
+        <div>
+          <label for="url">Personal website:</label>
+          <input type="url" name="url" id="url"
+                placeholder="https://example.com"
+                pattern="https://.*" size="30">
+        </div>
+        <br>
+        <div>
+          <label for="drink-select">Favorite drink:</label>
+          <select id="drink-select">
+            <optgroup label="Cold">
+                <option>Water</option>
+                <option>Soda</option>
+                <option>Smoothie</option>
+            </optgroup>
+            <optgroup label="Hot">
+                <option>Coffee</option>
+                <option>Tea</option>
+                <option>Hot Chocolate</option>
+            </optgroup>
+          </select>
+        </div>
+        <br>
+        <div>
+          <label for="number">Favorite number:</label>
+          <input id="number" type="number">
+        </div>
+        <br>
+        <div>
+          <label for="head">Favorite color:</label>
+          <input type="color" id="head" name="head" value="#a665e6">
+        </div>
+        <br>
+        <div>
+          <p>Which do you prefer?</p>
+          <label for="">Software</label>
+          <input type="range" id="prefer" name="prefer"
+                 min="0" max="11">
+          <label for="prefer">Hardware</label>
+        </div>
+        <br><br>
+        <div>
+          <label for="joke">Tell me your best joke:</label><br>
+          <textarea id="joke" name="joke" rows="5" cols="30"></textarea>
+        </div>
+        <br>
+        <div>
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+
+    </section>
+
+    <br><br>
+
+    <section>
+      <picture>
+        <source srcset="beach-h.JPG"
+                media="(min-width: 800px)">
+        <img src="beach-v.JPG" alt="" height="200" />
+      </picture>
+    </section>
 
   </main>
 
