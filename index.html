@@ -10,7 +10,7 @@
   <nav>
     <ul>
       <li><a href="#">Home</a></li>
-      <li><a href="https://github.com/katiehsieh/cse110-lab2">GitHub</a></li>
+      <li><a href="https://github.com/katiehsieh/cse110-lab2">View on GitHub</a></li>
     </ul>
   </nav>
 
@@ -28,6 +28,7 @@
     <section>
       <h2>Katie Hsieh</h2>
       <p><strong>Hello there!</strong> I'm a second year student studying computer engineering.</p>
+      <a href="https://katiehsieh.github.io/"><button type="button">Projects</button></a>
     </section>
 
     <br>
@@ -73,6 +74,11 @@
 
     <section>
       <h3>ECE 5: Line Following Robot</h3>
+      <details>
+        <summary>Details</summary>
+        Fall 2019 - first place robot :)
+      </details>
+      <br>
       <video controls
         src="https://katiehsieh.github.io/cse110-lab2/robot.mp4"
         width="250">
@@ -96,7 +102,7 @@
 
     <section>
       <h3>Wintergatan - Marble Machine</h3>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/IvUU8joBb1Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/IvUU8joBb1Q" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     <br>
@@ -114,6 +120,33 @@
       </svg>
     </section>
     
+    <br>
+    
+    <section>
+      <h3>Template</h3>
+      <table id="teamtable">
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Major</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Katie</td>
+            <td>Computer Engineering</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <template id="teamrow">
+        <tr>
+          <td class="member"></td>
+          <td></td>
+        </tr>
+      </template>
+    </section>
+
     <br>
     
     <aside>
@@ -142,10 +175,12 @@
       </pre>
     </div>
 
+    <br><hr><br>
+
     <section>
       <h3>Survey</h3>
 
-      <form action="" method="get">
+      <form>
         <div>
           <label for="name">Name: </label>
           <input type="text" name="name" id="name" required>
@@ -227,7 +262,7 @@
         <br>
         <div>
           <p>Which do you prefer?</p>
-          <label for="">Software</label>
+          <label for="prefer">Software</label>
           <input type="range" id="prefer" name="prefer"
                  min="0" max="11">
           <label for="prefer">Hardware</label>
@@ -247,13 +282,11 @@
 
     <br><br>
 
-    <section>
-      <picture>
-        <source srcset="beach-h.JPG"
-                media="(min-width: 800px)">
-        <img src="beach-v.JPG" alt="" height="200" />
-      </picture>
-    </section>
+    <picture>
+      <source srcset="beach-h.JPG"
+              media="(min-width: 800px)">
+      <img src="beach-v.JPG" alt="" height="350" />
+    </picture>
 
   </main>
 
@@ -262,5 +295,6 @@
   <footer>
     <hr>
     <p>© 2020 Katie Hsieh</p>
+    
   </footer>
 </body>
