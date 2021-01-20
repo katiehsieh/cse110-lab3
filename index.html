@@ -5,11 +5,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="style.css" rel="stylesheet"> 
+  <style>
+    main {
+    }
+  </style>
 </head>
 <body>
   <nav>
     <ul>
-      <li><a href="#">Home</a></li>
+      <li><a href="https://katiehsieh.github.io/">Home</a></li>
       <li><a href="https://github.com/katiehsieh/cse110-lab2">View on GitHub</a></li>
     </ul>
   </nav>
@@ -18,7 +22,7 @@
 
   <header>
     <hr>
-    <h1>cse110-lab2</h1>
+    <h1 style="text-align:center;">cse110-lab2</h1>
     <hr>
   </header>
 
@@ -28,7 +32,7 @@
     <section>
       <h2>Katie Hsieh</h2>
       <p><strong>Hello there!</strong> I'm a second year student studying computer engineering.</p>
-      <button type="button">Click me!</button>
+      <button id="button1" type="button">Click me!</button>
     </section>
 
     <br>
@@ -91,7 +95,7 @@
 
     <br>
 
-    <div>
+    <div class="center">
       <h3>Meet My Bird</h3>
       <figure>
         <img src="Frosty.JPG" alt="Bird" width=150>
@@ -209,23 +213,23 @@
     <section>
       <h3>Survey</h3>
 
-      <form>
-        <div>
+      <form class="survey">
+        <div class="survey">
           <label for="name">Name: </label>
           <input type="text" name="name" id="name" required>
         </div>
         <br>
-        <div>
+        <div class="survey">
           <label for="email">Email: </label>
           <input type="email" name="email" id="email" required>
         </div>
         <br>
-        <div>
+        <div class="survey">
           <label for="phone">Phone:</label>
           <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
         </div>
         <br>
-        <fieldset>
+        <fieldset class="survey">
           <legend>What year are you?</legend>
       
           <input type="radio" id="1st" name="year">
@@ -241,12 +245,12 @@
           <label for="4th">4th year</label>
         </fieldset>
         <br>
-        <div>
+        <div class="survey">
           <label for="grad">Graduation date:</label>
           <input type="month" id="grad" name="grad" min="2021-01">
         </div>
         <br>
-        <div>
+        <div class="survey">
           <label for="major">Major:</label>
           <input list="majors" id="major" name="major" />
           <datalist id="majors">
@@ -256,14 +260,14 @@
           </datalist>
         </div>
         <br>
-        <div>
+        <div class="survey">
           <label for="url">Personal website:</label>
           <input type="url" name="url" id="url"
                 placeholder="https://example.com"
                 pattern="https://.*" size="30">
         </div>
         <br>
-        <div>
+        <div class="survey">
           <label for="drink-select">Favorite drink:</label>
           <select id="drink-select">
             <optgroup label="Cold">
@@ -279,17 +283,17 @@
           </select>
         </div>
         <br>
-        <div>
+        <div class="survey">
           <label for="number">Favorite number:</label>
           <input id="number" type="number">
         </div>
         <br>
-        <div>
+        <div class="survey">
           <label for="head">Favorite color:</label>
           <input type="color" id="head" name="head" value="#a665e6">
         </div>
         <br>
-        <div>
+        <div class="survey">
           <p>Which do you prefer?</p>
           <label for="prefer">Software</label>
           <input type="range" id="prefer" name="prefer"
@@ -297,12 +301,12 @@
           <label for="prefer">Hardware</label>
         </div>
         <br><br>
-        <div>
+        <div class="survey">
           <label for="joke">Tell me your best joke:</label><br>
           <textarea id="joke" name="joke" rows="5" cols="30"></textarea>
         </div>
         <br>
-        <div>
+        <div class="survey">
           <input type="submit" value="Submit">
         </div>
       </form>
@@ -323,7 +327,8 @@
 
   <footer>
     <hr>
-    <p>© 2020 Katie Hsieh</p>
+    <br>
+    <small>© 2020 Katie Hsieh</small>
     
   </footer>
 </body>
