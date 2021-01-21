@@ -1,5 +1,3 @@
-# Standup Notes Template
-
 **Name:** 
 
 **Date:** 
