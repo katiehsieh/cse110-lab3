@@ -65,6 +65,7 @@ nav ul {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 9999;
 }
 nav li {
   float: left;
@@ -123,7 +124,7 @@ details[open] summary {
   margin-bottom: .5em;
 }
 
-/* aside */
+/* Aside */
 aside {
   width: 40%;
   padding-left: .5rem;
@@ -142,48 +143,59 @@ aside > h3 {
   padding-top: 0;
 }
 
-.hidden {
-  display: none;
+/* Table */
+th {
+  color: #8675a9;
 }
-
-.center {
-  text-align: center;
-}
-
-iframe {
-  border: none;
-  max-width: 100%;
-}
-
 th ~ td {
+  color: gray;
+}
+table, th, td {
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+  padding: 6px;
+}
+table > caption {
+  margin-bottom: 6px;
 }
 
-h3 + canvas {
-  background-color: rgba(134, 117, 169, 0.25);
-  width: 100px;
-  height: 100px;
-}
-
-svg {
-  width: 100px;
-  height: 100px;
-}
-
+/* Images */
 picture > img {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-
 img.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* Other */
+.hidden {
+  display: none;
+}
+.center {
+  text-align: center;
+}
+iframe {
+  border: none;
+  max-width: 100%;
+  min-width: 250px;
+}
+h3 + canvas {
+  background-color: rgba(134, 117, 169, 0.25);
+  width: 100px;
+  height: 100px;
+}
+svg {
+  width: 100px;
+  height: 100px;
+}
+
 @media screen and (max-width: 768px) {
   body {
-    margin-left: 1vw;
-    margin-right: 1vw;
+    margin-left: 0;
+    margin-right: 0;
   }
   nav ul {
     position: static;
