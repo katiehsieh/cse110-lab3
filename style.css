@@ -5,23 +5,33 @@
   text-align: left;
 }
 
-/* Text */
-h1 {
-  font-family: 'Work Sans', sans-serif;
-  color: white;
+body {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
-h2, h3 {
+
+/* Text */
+h1, h2, h3 {
   font-family: 'Work Sans', sans-serif;
-  color: rgb(134, 117, 169);
+  color: #8675a9;
+}
+h3 {
+  padding-top: 24px;
 }
 
 /* Header and footer */
 header{
-  background-color: hsla(260, 23, 56, 75);
-  border-color: white;
+  background-color: hsla(260, 23%, 56%, 0.10);
+  border-color: rgb(134, 117, 169);
   border-style: dotted;
   border-width: medium;
   border-radius: 12px;
+  margin-top: 1cm;
+  margin-bottom: 1cm;
+  margin-left: 1cm;
+  margin-right: 1cm;
 }
 footer {
   text-align: center;
@@ -44,7 +54,7 @@ footer {
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 0;
   overflow: hidden;
   background-color: #8675a9;
 }
@@ -53,13 +63,13 @@ nav li {
 }
 nav li a {
   display: block;
-  color: hsl(0,0,100);
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 nav li a:hover {
-  background-color: #98b;
+  background-color: hsl(260, 23%, 50%);
 }
 
 /* Button */
@@ -68,6 +78,7 @@ nav li a:hover {
   border-radius: 6px;
   background-color: #8675a9;
   color: white;
+  margin: 5pt 0pt 5pt 0pt;
 }
 #button1:hover, #button1:focus {
   background-color: rgba(0,0,0,0);
@@ -118,7 +129,21 @@ th ~ td {
 }
 
 h3 + canvas {
-  background-color: rgba(134, 117, 169, 50);
+  background-color: rgba(134, 117, 169, 0.25);
+  width: 100px;
+  height: 100px;
+}
+
+svg {
+  width: 100px;
+  height: 100px;
+}
+
+picture > img {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 img.center {
