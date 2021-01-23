@@ -6,10 +6,7 @@
 }
 
 body {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
+  margin: 0;
 }
 
 /* Text */
@@ -36,6 +33,7 @@ header{
 footer {
   text-align: center;
   background-color: #8675a9;;
+  padding: 24px;
 }
 
 /* Icons */
@@ -45,6 +43,7 @@ footer {
 }
 .icons > a {
   color: white;
+  padding: 6px;
 }
 .icons > a:hover {
   color: lightgray;
@@ -54,9 +53,13 @@ footer {
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 0 0 0 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
   overflow: hidden;
   background-color: #8675a9;
+  position: sticky;
 }
 nav li {
   float: left;
@@ -79,6 +82,7 @@ nav li a:hover {
   background-color: #8675a9;
   color: white;
   margin: 5pt 0pt 5pt 0pt;
+  padding: 5px;
 }
 #button1:hover, #button1:focus {
   background-color: rgba(0,0,0,0);
@@ -114,6 +118,29 @@ details[open] summary {
   margin-bottom: .5em;
 }
 
+/* aside */
+aside {
+  width: 40%;
+  padding-left: .5rem;
+  margin-left: .5rem;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #8675a9;
+  font-style: italic;
+  color: #8675a9;
+  margin-top: 24px;
+  position: relative;
+}
+aside > p {
+  margin: .5rem;
+}
+aside > h3 {
+  padding-top: 0;
+}
+
+.hidden {
+  display: none;
+}
+
 .center {
   text-align: center;
 }
@@ -123,6 +150,7 @@ details[open] summary {
 
 iframe {
   border: none;
+  max-width: 100%;
 }
 
 th ~ td {
@@ -140,11 +168,12 @@ svg {
 }
 
 picture > img {
-  margin-top: 24px;
+  margin-top: 100px;
   margin-bottom: 12px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
